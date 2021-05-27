@@ -1,0 +1,911 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+img{
+    max-width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.separar{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor{
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+.contenedor-redes-inicio{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 43, 43);
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.datos-inicio{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.3rem;
+}
+
+.datos-inicio i{
+   color: white;
+   font-size: 1rem;
+   
+}
+
+.redes-inicio{
+    margin-top: 1.3rem;
+}
+
+.redes-inicio i{
+    font-size: 1.5rem;
+}
+
+
+
+.bloque-cabecera-inicio {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    
+    
+}
+
+.scrol{
+    height: 100px;
+}
+
+
+
+.bloque-cabecera-inicio.active{
+    background-color:white;
+   
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    max-width: 100%;
+    height:100vh;
+    min-height: 47rem;
+    background-image: url('/img/header.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+    
+    
+    
+}
+
+.titulo_cabecera{
+    
+    margin-top: 0.5rem;
+    
+}
+.titulo_opacidad{
+    opacity: 0.8;
+}
+
+.bloque_cabecera{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6rem;
+    margin-bottom: 10rem;
+   
+    
+    
+}
+
+.titulo_seccion_index{
+    text-align: center;
+    margin-top: 2rem;
+   margin-bottom: 2rem;
+   font-size: 2.5rem;
+   color: white;
+}
+
+.encuentra{
+    color:rgb(116, 186, 233) ;
+}
+
+.navegacion, a{
+   color: black;
+   text-decoration: none;
+   margin-top: 1rem;
+   margin-right: 1rem;
+   font-size: 1rem;
+   transition: all 0.5s ease;
+}
+
+
+ 
+
+.navegacion a:hover{
+ padding: 5px 10px;   
+ background-color:black;
+ color: white;
+ border-radius: 1.2rem;
+
+
+}
+
+
+
+.titulo_venta_casas{
+    color: white;
+    max-width: 30%;
+    margin-left: 18rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    
+
+    
+}
+
+
+
+.formulario_consulta{
+    width: 80%;
+    height: 4.5rem;
+    margin: auto;
+    border-radius: 3.5rem;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    border: 5px  solid gray
+    
+  
+}
+
+.compra,.tipo,.habitaciones{
+    border-style: none;
+    border-right: 0.2px solid gray;
+    color: rgb(58, 56, 56);
+    font-size: 1rem;
+    padding-right: 7.82rem;
+    margin-left: 1rem;
+    background-color: white;
+}
+
+.compra{
+    margin-left: 2rem;
+    
+}
+
+.boton_consulta{
+    max-width: 9rem;
+    height: 100%;
+    padding: 0 3rem 0 3rem;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: rgb(116, 186, 233);   
+    color:white;
+    margin-left: 21.8rem;
+    font-size: 1rem;
+    
+}
+
+.opcion{
+    font-weight: 5rem;
+}
+
+
+
+.titulo_seccion{
+    text-align: center;
+    margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+
+.articulo_primero-nosotros{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;  
+ }
+
+ .titulo-nosotros{
+     font-weight: 300;
+     text-align: center;
+     margin-bottom: 2rem;
+ }
+
+
+ .nosotros h3{
+     text-transform: uppercase;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ .propiedades{
+    display: flex;
+    justify-content: space-between; 
+
+ }
+
+ .articulo_primero{
+    flex-basis: calc(33.8% - 1rem); 
+    border: 1px solid #b5b5b5; 
+    background-color: #f5f5f5;
+ }
+
+ .contenedor_imagenes{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .texto-anuncio{
+     display: flex;
+     flex-direction: column;
+     padding: 1rem;
+ }
+
+
+ .precio{
+     color: rgb(23, 218, 33);
+     font-weight: 900;
+     margin-bottom: 1rem;
+ }
+
+ .boton_propiedad{
+     background-color: rgb(255, 187, 0);
+     display: block;
+     text-align: center;
+     margin-left: 1rem;
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+     padding: 0.5rem 2rem;
+     color: white;
+     font-weight: 700;
+ }
+
+ 
+ .ver-todas{
+     
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 1rem;
+     
+     
+ }
+
+ .boton-ver-todas{
+     display: inline-block;
+     background-color: rgb(0, 255, 42);
+     padding: 0.6rem;
+     padding-left: 1.5rem;
+     padding-right: 1.5rem;
+     color: white;
+     font-weight: 700;
+ }
+
+
+
+
+ .contacta{
+    max-width: 100%;
+    height:50vh;
+    min-height: 15rem;
+     background-image: url('/img/encuentra.jpg');
+     background-position: center center;
+     background-size: cover; 
+    color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: baseline;
+    
+    
+     
+ }
+
+  .suenos,.llena,.contactanos{
+      margin-left: 10rem;
+  }
+
+ .suenos{
+     margin-top: 3rem;
+     
+ }
+
+ .contactanos{
+    
+     background-color:rgb(255, 187, 0); 
+     display:block;
+     padding: 0.5rem;
+     border-radius: 1rem;
+     
+    
+     
+ }
+
+
+ .enlace{
+     margin-left: 0.5rem;
+ }
+
+ .titulo_blog_testimoniales{
+     display: flex;
+ }
+
+ .nuestro_blog{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 60%;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.primer-contenedor{
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.primer-contenedor-blog{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.primer_blog{
+    max-width: 45%;
+    display: flex;
+    justify-content: space-between;
+    
+   
+
+}
+
+.primer_imagen_blog{
+
+    max-width: 40%;
+    
+}
+
+.blog_texto_primero{
+    max-width: 55%;
+   
+}
+
+.primer_blog h4{
+font-weight: 900;
+}
+
+.borde{
+    border-bottom: 2px solid rgb(255, 187, 0);
+}
+
+.resaltar{
+ color:rgb(255, 187, 0) ;
+}
+
+
+
+.testimoniales{
+    width: 32%;
+    height: 95%;
+    background-color: rgb(255, 187, 0);
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    border-radius: 1rem;
+    
+}
+ 
+.comillas{
+    width: 5rem;
+    margin-top: 1rem;
+    max-width: 100%;
+    
+}
+
+.nombre_testimonial{
+    margin-left: 14rem;
+    margin-top: 3rem;
+}
+
+.texto_testimoniales,.nombre_testimonial{
+    color:white;
+}
+
+.texto_testimoniales{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(44, 43, 43);
+    margin-top: 3rem;
+}
+
+.legal a , .menu p, .direccion_dos p ,.menu li{
+    color: white;
+    font-size: 1rem;
+   
+}
+.legal li,.direccion_dos p,.menu li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.politica{
+    margin-top: 1rem;
+}
+
+.direccion{
+    margin-bottom: 2rem;
+}
+
+.titulo_legal,.titulo_direccion_dos,.titulo_menu{
+ border-bottom: 1px solid rgb(255, 255, 255);
+ text-align: center;
+ margin-top: 1rem;
+ max-width: 70%;
+ color: white;
+ margin-bottom: 0.5rem;
+
+
+}
+
+.titulo_mapa,.titulos_redes{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+
+}
+
+.menu a{
+    color: white;
+    font-size: 1rem;  
+}
+
+.fa-facebook{
+    color: rgb(230, 212, 215);
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.fa-instagram-square{
+    
+    color: rgb(230, 212, 215);
+    font-size: 2rem;
+    margin-right: 2rem;
+
+}
+
+.fa-twitter{
+    color: rgb(230, 212, 215);
+    font-size: 2rem;
+    margin-right: 2rem;
+
+}
+
+.redes{
+    text-align: center;
+}
+
+.footer_final{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+ 
+    
+}
+
+.texto_footer_final{
+    font-size: 1rem;
+}
+
+
+
+ /* nosotros*/
+
+ .cabecera_nosotros{
+    max-width: 100%;
+    background-color: rgb(44, 43, 43);
+    margin-top: 10px;
+    padding: 1rem;
+    
+    
+}
+
+.bloque_cabecera_nosotros{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+.titulo_cabecera_nosotros{
+    color: white;
+   
+    
+}
+
+.articulo_historia{
+    max-width: 67%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.imagen_historia{
+    width: 43rem;
+    max-width: 100%;
+    height: 30rem;
+}
+
+.contenedor_imagen_historia{
+    max-width: 53%;
+    
+}
+
+.contenedor_texto_historia{
+    max-width: 45%;
+}
+
+.titulo_historia{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+.texto_historia,.texto_historia_dos{
+    line-height: 1.5rem;
+   color: black;
+}
+
+
+/*propiedad_primera*/
+    
+
+.caja_contenedor{
+    max-width: 50rem;
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+    margin: auto;
+}
+
+.imagen_pequena{
+    width: 8rem;
+    max-width: 100%;
+    height: 5rem;
+}
+
+
+
+.contenedor_imagenes_propiedad {
+    display: flex;
+    max-width: 50%;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin: auto;
+    
+}
+
+.propiedad_primera_imagen{
+    max-width:100% ;
+}
+
+.fanci_uno{
+    margin-left: 3rem;
+}
+
+.habitaciones_propiedad{
+    color: black;
+}
+
+.habitaciones_propiedad_precio{
+   color: rgb(10, 214, 20);; 
+}
+
+.texto_historia_propiedad{
+    line-height: 1.5rem;
+   color: black;
+}
+
+.contenedor_texto_historia_propiedad{
+    max-width: 45%;
+    margin: auto;
+}
+
+/*contacto*/
+
+.color a:hover{
+    color: white;
+    padding: 5px 10px;   
+    background-color:white;
+    color: black;
+    border-radius: 1.2rem;
+   
+}
+
+.imagen_contacto{
+    max-width: 100%;
+}
+
+.seccion_contacto{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.direccion_contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  max-width: 100%;
+  margin-left: 3rem;
+}
+
+.nombre,.telefono,.email,.mensaje{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    
+}
+
+.nombre_n,.telefono_t,.email_e,.mensaje_m{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    background-color: rgb(214, 214, 214);
+    border-color:  rgb(214, 214, 214);
+    padding: 0.5rem;
+}
+
+
+.formulario_segundo{
+    width: 40rem;
+    max-width: 100%;
+    padding:1rem
+}
+
+.fa-map,.fa-phone,.fa-envelope,.fa-calendar-alt{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.mapa_contacto{
+    margin-top: 1rem;
+    width: 40rem;
+    max-width: 100%;
+    height: 100%;
+}
+
+.aceptacion{
+    margin-top: 2rem;
+}
+
+.enviar{
+   padding-left: 1.3rem;
+   padding-right: 1.3rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   background-color: rgb(255, 187, 0);
+}
+
+#spinner{
+    display: none;
+    border: 4px solid rgba(0, 0,0, 0.1);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-left-color:#09f ;
+    animation: spin 1s linear infinite;
+    
+    margin-top: 3rem;
+    margin-left: 16rem;
+}
+
+@keyframes spin{
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.enviando{
+    margin-top: 1rem;
+    margin-left: 32.5rem;
+    
+}
+
+/* blog*/
+
+.color a{
+    color: white;
+}
+
+.articulo_blog_contacto{
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2rem;
+    
+}
+
+.imagen_cabecera_blog{
+    max-width: 100%;
+}
+
+.primer_blog{
+    width: 100%;
+    max-width: 100%;;
+   display: flex;
+   justify-content: space-between;
+  
+  
+   
+   
+}
+
+.ver_blog{
+    background-color:  rgb(255, 187, 0);
+    margin-left: 27rem;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+   
+}
+
+/*anuncio*/
+
+.formulario_segundo_anuncio{
+    width: 40rem;
+    max-width: 100%;
+    padding:1rem;
+    
+}
+
+.formulario_anuncio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    max-width: 100%;
+   margin: auto;
+  }
+
+  /*pagina_blog*/
+
+  .contenido_blog{
+      max-width: 75%;
+      margin: auto;
+      line-height: 1.8rem;
+     
+      text-align: start;
+  }
+
+  .subtitulo_blog{
+      max-width: 60%;
+      margin: auto;
+     text-align: center;
+      padding: 1rem;
+      
+  }
+
+  .bordes{
+      border: 1px solid red;
+  }
+
+  .borde_verde{
+    border: 1px solid rgb(0, 255, 42);  
+  }
+
+  /*cookies*/
+
+
+  .cookies{
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background-color:rgb(44, 43, 43);
+      color: white;
+      margin: auto;
+      padding: 1rem;
+      transition: 400ms;
+    
+  }
+
+  .boton_cookies{
+      margin: auto;
+      margin-top: 1rem;
+      color: white;
+      cursor: pointer;
+     
+  }
+
+  .cookies.active{
+      bottom: 0;
+  }
+
+  .boton_politica, .boton_aceptar{
+      padding: 0.5rem;
+      border-radius: 2rem;
+      background-color:  rgb(255, 187, 0);
+      
+  }
